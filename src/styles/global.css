@@ -1,0 +1,214 @@
+    /* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #1f3b59;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  /* Create a fluid container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Layout Styles */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  /* Card Styling for Data Listings */
+  .card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .card .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #27a745;
+  }
+  
+  .card .sentiment {
+    font-size: 16px;
+    color: #fa7c16;
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Flexbox Layout for Dashboard */
+  .dashboard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* Cards Display for Crypto Information */
+  .crypto-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 30px;
+  }
+  
+  .crypto-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .crypto-card .price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e873d;
+  }
+  
+  .crypto-card .sentiment {
+    font-size: 16px;
+    color: #fa7c16;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .dashboard {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .crypto-card {
+      max-width: 100%;
+    }
+  
+    button {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
+  /* Add some subtle background gradient for card hover effect */
+  .crypto-card:hover {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1e3a8a;
+    color: white;
+    position: fixed;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .sidebar nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Layout */
+  .main-layout {
+    display: flex;
+  }
+  
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
+    background-color: #f9fafb;
+  }
+  

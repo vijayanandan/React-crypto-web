@@ -1,9 +1,14 @@
+import React from 'react';
+import CryptoDashboard from '@/components/CryptoDashboard';
+import Sidebar from '@/components/Sidebar';
+import '@/styles/global.css';
 
-export default async function CryptoDashboard() {
+export default function CryptoDashboardPage() {
   return (
-    <div>
+    <div className="main-layout">
+      <Sidebar />
       <div className="content">
-        <h2>All Tokens</h2>
+        <CryptoDashboard />
       </div>
     </div>
   );
